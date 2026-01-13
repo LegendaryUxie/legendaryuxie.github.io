@@ -1,14 +1,13 @@
 *{
     box-sizing: border-box;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
     background-color: rgb(29, 29, 29);
+    text-decoration: none;
 }
 
 .sticky{
     position: fixed;
     top: 0;
-}
+} 
 
 div {
     display: block;
@@ -16,14 +15,24 @@ div {
 }
 
 header{
+    display: flex;
     flex-direction: row;
-    padding: 32px 16px 0;
-    margin: -32px -16px 16px;
-}
+    padding-top: 16px;
+    justify-content: space-between;
+    width: 1460px;
+} 
 
 h1{
     font-weight: bold;
     font-size: 3rem;
+}
+
+a{
+    color: #61aef1;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 small{
@@ -31,14 +40,25 @@ small{
     font-weight: 400;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1500px) {
     .content{
-        max-width: 1168px;
+        max-width: 1460px;
     }
 }
 
 .content{
     margin: 0 auto;
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-picture{
+    border: 4px solid  #61aef1;
+    border-radius: 50%;
 }
 
 .name{
@@ -49,4 +69,11 @@ small{
 {
     margin-top: 4px;
     display: block;
+}
+
+.shortcuts{
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
