@@ -5,8 +5,9 @@
 }
 
 .sticky{
-    position: fixed;
+    position: sticky;
     top: 0;
+    z-index: 10;
 } 
 
 div {
@@ -19,7 +20,9 @@ header{
     flex-direction: row;
     padding-top: 16px;
     justify-content: space-between;
-    width: 1460px;
+    width: 100%;
+    max-width: 1460px;
+    margin: 0 auto;
 } 
 
 h1{
