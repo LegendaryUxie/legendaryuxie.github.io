@@ -95,9 +95,55 @@ small{
     flex-wrap: wrap;
 }
 
-.projects video{
+.projects div{
+    position: relative;
     width: 100%;
     max-width: 600px;
+}
+
+.projects video{
+    width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.projects video:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    filter: brightness(0.5);
+}
+
+.projects h1, .projects p, .projects h2{
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.projects h1{
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+}
+
+.projects p{
+    top: 50%;
+    left: 40px;
+    right: 40px;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+}
+
+.projects h2{
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+}
+
+.projects div:hover h1, .projects div:hover p , .projects div:hover h2{
+    opacity: 1;
 }
