@@ -93,6 +93,7 @@ small{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: justify;
 }
 
 .projects div{
@@ -114,7 +115,7 @@ small{
     filter: brightness(0.5);
 }
 
-.projects h1, .projects p, .projects h2{
+.projects h1, .projects p, .projects h2, .projects h3{
     position: absolute;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -124,10 +125,17 @@ small{
     pointer-events: none;
 }
 
-.projects h1{
+.projects h1, .projects h3{
     top: 20px;
-    left: 20px;
     font-size: 2rem;
+}
+
+.projects h1{
+    left: 20px;
+}
+
+.projects h3{
+    right: 20px;
 }
 
 .projects p{
@@ -144,6 +152,6 @@ small{
     font-size: 1.5rem;
 }
 
-.projects div:hover h1, .projects div:hover p , .projects div:hover h2{
+.projects div:hover h1, .projects div:hover p , .projects div:hover h2, .projects div:hover h3{
     opacity: 1;
 }
