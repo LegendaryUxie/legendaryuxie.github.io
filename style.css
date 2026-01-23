@@ -87,6 +87,37 @@ small{
     align-items: center;
 }
 
+.icon{
+    line-height: 0;
+    transition: filter 0.3s ease;
+}
+
+.icon:hover{
+    filter: brightness(1.4);
+    transition: filter 0.3s ease;
+}
+
+.resume{
+    outline-color: #61aef1;
+    outline-style: solid;
+    outline-width: 2px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.resume:hover{
+    background-color: #61aef1;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.resume h1{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
 .projects{
     gap: 30px;
     margin: 40px;
