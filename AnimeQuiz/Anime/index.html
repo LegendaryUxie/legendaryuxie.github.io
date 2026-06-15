@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title> Anime Quiz </title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1 class="header">GUESS THE ANIME</h1>
+
+        <img class="anime-img" src="" alt="Anime Image" id="animeImage" style="display: none">
+
+        <div class="clues">
+            <button class="clue" onclick="chooseOption(0)">1st Option</button>
+            <button class="clue" onclick="chooseOption(1)">2nd Option</button>
+            <button class="clue" onclick="chooseOption(2)">3rd Option</button>
+            <button class="clue" onclick="chooseOption(3)">4th Option</button>
+        </div>
+
+        <div class="input">
+            <input type="text" id="animeName" class="anime-name-input" placeholder="Enter anime name" onkeypress="OnKeyPress(event)">
+            <div id="autocompleteList" class="autocomplete-list">
+            </div>
+            <button class="guess-btn" onclick="GuessAnime()">Guess Anime</button><br>
+        </div>
+
+    </main>
+</body>
+
+</html>

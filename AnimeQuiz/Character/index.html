@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title> Anime Quiz </title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <img src="" alt="Character Image" id="characterImage" style="display: none"><br>
+
+    <input type="text" id="characterName" placeholder="Enter character name" onkeypress="OnKeyPress(event)"><br>
+    <button onclick="GuessCharacter()">Guess Character</button><br>
+    <div class="choices">
+      <button class="choice" onclick="chooseOption(0)">1st Option</button>
+      <button class="choice" onclick="chooseOption(1)">2nd Option</button>
+      <button class="choice" onclick="chooseOption(2)">3rd Option</button>
+      <button class="choice" onclick="chooseOption(3)">4th Option</button>
+    </div>
+
+</body>
+
+</html>

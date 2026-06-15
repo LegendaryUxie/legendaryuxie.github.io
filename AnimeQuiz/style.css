@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #ffa62b;
+    --primary-hover: #b2741e;
+    --secondary-color: #55c1ff;
+    --secondary-hover: #4395c4;
+    --dark-gray: #262626;
+    --background-color: #000000;
+}
+
+/*----------css resets------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+body, html {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    background-color: var(--background-color);
+}
+
+header, footer, main, section, article {
+    container-type: inline-size;
+}
+
+h1, h2, h3 {
+    text-wrap: balance;
+}
+
+p, li, figcaption {
+    text-wrap: pretty;
+    max-width: 65ch;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+button, input {
+    border: none;
+}
+
+/*----------main------------*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+
+h1 {
+    color: contrast-color(var(--background-color));
+}
+
+.anime-img {
+    width: 27rem;
+}
+
+/*---Input---*/
+.input {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: relative;
+
+    .anime-name-input {
+        font-size: 1.3rem;
+        padding: 1rem 1rem;
+        border-radius: 0.2rem;
+        background-color: var(--dark-gray);
+        color: contrast-color(var(--dark-gray));
+        width: 100%;
+        position: relative;
+    }
+
+    .anime-name-input:focus {
+        outline: 2px solid var(--primary-color);
+    }
+
+    .guess-btn {
+        font-size: 1.3rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.2rem;
+        background-color: var(--primary-color);
+        color: contrast-color(var(--primary-color));
+        cursor: pointer;
+    }
+
+    .guess-btn:hover {
+        background-color: var(--primary-hover);
+    }
+
+    .autocomplete-list {
+        position: absolute;
+        width: 70%;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        background-color: var(--dark-gray);
+        border: 2px solid var(--primary-color);
+        border-top: none;
+        max-height: 250px;
+        overflow-y: auto;
+        z-index: 100;
+        display: none;
+    }
+
+    .autocomplete-item {
+        padding: 1rem;
+        cursor: pointer;
+        color: contrast-color(var(--dark-gray));
+    }
+
+    .autocomplete-item:hover {
+        background-color: var(--primary-hover);
+    }
+}
+
+
+.clues {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    .clue {
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.2rem;
+        background-color: var(--secondary-color);
+        color: contrast-color(var(--secondary-color));
+        cursor: pointer;
+    }
+
+    .clue:hover {
+        background-color: var(--secondary-hover);
+    }
+}
+
+/*------------------footer-------------------*/
+.footer {
+
+}
